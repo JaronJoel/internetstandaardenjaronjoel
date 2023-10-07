@@ -1,3 +1,21 @@
+body h1{
+    font-family: 'Bayon';font-size: 100px;
+    color: darkgreen;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-family: 'Antonio';font-size: 30px;
+    margin: 0.5em;
+}
+p{
+    font-family: 'Fira Sans Condensed';font-size: 22px;
+    margin: 0.5em;
+    color: black;
+}
+img{
+    height: auto;
+}
 header nav {
     background-color: darkgreen;
     color: white;
@@ -10,30 +28,34 @@ header img {
     justify-content: center;
     background-color: darkgreen;
 }
-header a {
-    color: white;
-}
-header nav ul{
+header nav{
     display: flex;
     justify-content: space-around;
     list-style: none;
-}
-header a{
     text-decoration: none;
+}
+header button a{
     color: white;
-    margin: 10px;
     padding: 10px;
-    background-color: green;
+    border: 10px;
+    border-color: darkgreen;
+    background-color: darkgreen;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+header button a:hover{
+    color: darkgreen;
+    background-color: white;
+    transition-duration: 0.7s;
 }
 article a img {
     width: 10%;
 }
 header {
     background-color: darkgreen;
-}
-.ajax p {
-    color: black;
-    font-size: 22px;
 }
 .ajax ol{
     color: black;
@@ -82,19 +104,9 @@ section{
 section img{
     width: 90%;
 }
-h1{
-    display: flex;
-    justify-content: center;
-    font-size: 5em;
-    font: bold;
-}
 h2{
     margin: 0.5em;
     font-size: 30px;
-}
-p{
-    margin: 0.5em;
-    font-size: 22px;
 }
 .index h2{
     display: flex;
@@ -124,7 +136,6 @@ footer a{
 footer h2{
     display: flex;
     justify-content: center;
-    margin: 1em;
 }
 .ytvideo{
     display: flex;
@@ -150,6 +161,27 @@ footer h2{
     width: 18%;
     margin: 20px;
 }
+.barca main img{
+    width: 250px;
+    height: 250px;
+}
+.barca h2{
+    display: flex;
+    justify-content: center;
+}
+.barca div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.dortmund div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.dortmund div img{
+    width: 20%;
+}
 .milan main div img{
     width: 20%;
     margin: 20px;
@@ -173,6 +205,14 @@ footer h2{
     flex-direction: row;
     margin: 1em;
 }
-.westham div img{
+.westham div:first-of-type img{
     width: 30%;
+}
+.westham div:nth-of-type(2){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.westham div:nth-of-type(2) img{
+    width: 20%;
 }
